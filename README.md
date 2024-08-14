@@ -1,6 +1,3 @@
-# DISCLAIMER
-*** This readme example is adapted from a LLM-generated example based on prompts given by the user. ***
-
 # EVA71 DIMPLE Alignment Analysis and Codon Count Processing Scripts
 
 ## Overview
