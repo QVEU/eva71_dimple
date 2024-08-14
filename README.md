@@ -1,7 +1,7 @@
 # DISCLAIMER
 *** This readme example is adapted from a LLM-generated example based on prompts given by the user. ***
 
-# Project Name
+# EVA71 DIMPLE Alignment Analysis and Codon Count Processing Scripts
 
 ## Overview
 
@@ -11,8 +11,6 @@ This repository contains two scripts used to process data and generate figures i
 - alignment_entropy: sequence files and scripts for generating Shannon entropy from curated EV-A71 sequence set and comparing this to mean mutational fitness effect as measured via mutational scanning. 
 
 ### Prerequisites
-
-List any software, libraries, or dependencies that need to be installed before the project can be used. For example:
 
 - R 4.4.3+
 - R packages: tidyverse, zoo, Biostrings, DescTools,  
