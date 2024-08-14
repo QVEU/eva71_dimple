@@ -27,7 +27,7 @@ compute_shannon_entropy.R: Function to calculate Shannon entropy from consensus 
 
 output_files: pdf image of entropy/DMS MFE trace for EV-A71.
 
-#### dms_processing
+#### dms_processing:
 
 Running instructions: Set the working directory to this folder before running the script.
 
