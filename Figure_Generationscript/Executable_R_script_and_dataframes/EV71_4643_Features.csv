@@ -1,0 +1,12 @@
+Genome,Genome ID,Accession,BRC ID,RefSeq Locus Tag,Alt Locus Tag,Feature ID,Annotation,Feature Type,Start,End,Length,Strand,FIGfam ID,PATRIC genus-specific families (PLfams),PATRIC cross-genus families (PGfams),Protein ID,AA Length,Gene Symbol,Product,GO
+Enterovirus A71 Tainan/4643/98,39054.14496,MW298156,fig|39054.14496.mat_peptide.3,,,PATRIC.39054.14496.MW298156.mat_peptide.1715.2440.fwd,PATRIC,mat_peptide,1715,2440,726,+,,,,,242,1C(VP3),VP3 (1C),
+Enterovirus A71 Tainan/4643/98,39054.14496,MW298156,fig|39054.14496.mat_peptide.4,,,PATRIC.39054.14496.MW298156.mat_peptide.2441.3331.fwd,PATRIC,mat_peptide,2441,3331,891,+,,,,,297,1D(VP1),VP1 (1D),
+Enterovirus A71 Tainan/4643/98,39054.14496,MW298156,fig|39054.14496.mat_peptide.5,,,PATRIC.39054.14496.MW298156.mat_peptide.3332.3781.fwd,PATRIC,mat_peptide,3332,3781,450,+,,,,,150,2A,2A,
+Enterovirus A71 Tainan/4643/98,39054.14496,MW298156,fig|39054.14496.mat_peptide.6,,,PATRIC.39054.14496.MW298156.mat_peptide.3782.4078.fwd,PATRIC,mat_peptide,3782,4078,297,+,,,,,99,2B,2B,
+Enterovirus A71 Tainan/4643/98,39054.14496,MW298156,fig|39054.14496.mat_peptide.7,,,PATRIC.39054.14496.MW298156.mat_peptide.4079.5065.fwd,PATRIC,mat_peptide,4079,5065,987,+,,,,,329,2C,2C,
+Enterovirus A71 Tainan/4643/98,39054.14496,MW298156,fig|39054.14496.mat_peptide.8,,,PATRIC.39054.14496.MW298156.mat_peptide.5066.5323.fwd,PATRIC,mat_peptide,5066,5323,258,+,,,,,86,3A,3A,
+Enterovirus A71 Tainan/4643/98,39054.14496,MW298156,fig|39054.14496.mat_peptide.9,,,PATRIC.39054.14496.MW298156.mat_peptide.5324.5389.fwd,PATRIC,mat_peptide,5324,5389,66,+,,,,,22,3B(VPg),3B,
+Enterovirus A71 Tainan/4643/98,39054.14496,MW298156,fig|39054.14496.mat_peptide.10,,,PATRIC.39054.14496.MW298156.mat_peptide.5390.5938.fwd,PATRIC,mat_peptide,5390,5938,549,+,,,,,183,3C,3C,
+Enterovirus A71 Tainan/4643/98,39054.14496,MW298156,fig|39054.14496.mat_peptide.11,,,PATRIC.39054.14496.MW298156.mat_peptide.5939.7324.fwd,PATRIC,mat_peptide,5939,7324,1386,+,,,,,462,3D,3D,
+Enterovirus A71 Tainan/4643/98,39054.14496,MW298156,fig|39054.14496.mat_peptide.1,,,PATRIC.39054.14496.MW298156.mat_peptide.746.952.fwd,PATRIC,mat_peptide,746,952,207,+,,,,,69,1A(VP4),VP4 (1A),
+Enterovirus A71 Tainan/4643/98,39054.14496,MW298156,fig|39054.14496.mat_peptide.2,,,PATRIC.39054.14496.MW298156.mat_peptide.953.1714.fwd,PATRIC,mat_peptide,953,1714,762,+,,,,,254,1B(VP2),VP2 (1B),
