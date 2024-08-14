@@ -10,7 +10,7 @@ This repository contains two scripts used to process data and generate figures i
 ### Prerequisites
 
 - R 4.4.3+
-- R packages: tidyverse, zoo, Biostrings, DescTools
+- R packages: tidyverse, zoo, Biostrings, DescTools, ggplot2, tidyr, ggpubr, dplyr, ggridges, ineq, RColorBrewer, stringr, gglorenz, readr, scales
 
 ### Instructions 
 #### alignment_entropy:
