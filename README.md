@@ -2,11 +2,11 @@
 
 ## Overview
 
-This repository contains two scripts used to process data and generate figures in Bakhache et. al. 2024:
+This repository contains three scripts used to process data and generate figures in Bakhache et. al. 2024:
 
 - dms_processing: raw codon counts from mutational scanning experiments and scripts for filtering codon counts based on codons introduced via synthetic biology. 
 - alignment_entropy: sequence files and scripts for generating Shannon entropy from curated EV-A71 sequence set and comparing this to mean mutational fitness effect as measured via mutational scanning.
-
+- figure_generation_script: script generates all the figures displayed in the paper. 
 ### Prerequisites
 
 - R 4.4.3+
