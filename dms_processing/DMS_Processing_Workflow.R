@@ -108,32 +108,32 @@ codonFilter <- function(oligos_programmed_, codon_counts_, wildtype_, start_end_
 
 
 #Initializing codon files from Twist, Wildtype nucleotide sequences, and start/end positions (amino acid)
-oligos_programmed_capsid <- "All_Oligos_Capsid.fasta"
-wildtype_capsid <- "bbfree_2-746-3331.fasta"
+oligos_programmed_capsid <- "input_files/All_Oligos_Capsid.fasta"
+wildtype_capsid <- "input_files/bbfree_2-746-3331.fasta"
 
 start_end_capsid <- c(1,862)
 
-oligos_programmed_replication <- ("All_Oligos_Replication.fasta")
-wildtype_replication <- ("bbfree-3332-7324.fasta")
+oligos_programmed_replication <- ("input_files/All_Oligos_Replication.fasta")
+wildtype_replication <- ("input_files/bbfree-3332-7324.fasta")
 start_end_replication <- c(863, 2193)
 
 #Running codonFilter for all of the data.
-capsid_P0_filtered <- codonFilter(oligos_programmed_capsid, "codonCounts/Capsid_input_DMS.codonCounts", wildtype_capsid, start_end_capsid)
-capsid_P1_A_filtered <- codonFilter(oligos_programmed_capsid, "codonCounts/Capsid_P1_RepA_DMS_Nextseq.codonCounts", wildtype_capsid, start_end_capsid)
-capsid_P1_B_filtered <- codonFilter(oligos_programmed_capsid, "codonCounts/Capsid_P1_RepB_DMS_Nextseq.codonCounts", wildtype_capsid, start_end_capsid)
-capsid_P1_C_filtered <- codonFilter(oligos_programmed_capsid, "codonCounts/Capsid_P1_RepC_DMS_Nextseq.codonCounts", wildtype_capsid, start_end_capsid)
-capsid_P2_A_filtered <- codonFilter(oligos_programmed_capsid, "codonCounts/Capsid_P2_RepA_DMS_Nextseq.codonCounts", wildtype_capsid, start_end_capsid)
-capsid_P2_B_filtered <- codonFilter(oligos_programmed_capsid, "codonCounts/Capsid_P2_RepB_DMS_Nextseq.codonCounts", wildtype_capsid, start_end_capsid)
-capsid_P2_C_filtered <- codonFilter(oligos_programmed_capsid, "codonCounts/Capsid_P2_RepC_DMS_Nextseq.codonCounts", wildtype_capsid, start_end_capsid)
+capsid_P0_filtered <- codonFilter(oligos_programmed_capsid, "input_files/codon_counts/Capsid_input_DMS.codonCounts", wildtype_capsid, start_end_capsid)
+capsid_P1_A_filtered <- codonFilter(oligos_programmed_capsid, "input_files/codon_counts/Capsid_P1_RepA_DMS_Nextseq.codonCounts", wildtype_capsid, start_end_capsid)
+capsid_P1_B_filtered <- codonFilter(oligos_programmed_capsid, "input_files/codon_counts/Capsid_P1_RepB_DMS_Nextseq.codonCounts", wildtype_capsid, start_end_capsid)
+capsid_P1_C_filtered <- codonFilter(oligos_programmed_capsid, "input_files/codon_counts/Capsid_P1_RepC_DMS_Nextseq.codonCounts", wildtype_capsid, start_end_capsid)
+capsid_P2_A_filtered <- codonFilter(oligos_programmed_capsid, "input_files/codon_counts/Capsid_P2_RepA_DMS_Nextseq.codonCounts", wildtype_capsid, start_end_capsid)
+capsid_P2_B_filtered <- codonFilter(oligos_programmed_capsid, "input_files/codon_counts/Capsid_P2_RepB_DMS_Nextseq.codonCounts", wildtype_capsid, start_end_capsid)
+capsid_P2_C_filtered <- codonFilter(oligos_programmed_capsid, "input_files/codon_counts/Capsid_P2_RepC_DMS_Nextseq.codonCounts", wildtype_capsid, start_end_capsid)
 
 #Runs codonFilter on all the replication proteins codon read files
-replication_P0_filtered <- codonFilter(oligos_programmed_replication, "codonCounts/Replication_input_DMS_DMS.codonCounts", wildtype_replication, start_end_replication)
-replication_P1_A_filtered <- codonFilter(oligos_programmed_replication, "codonCounts/Replication_P1_RepA_DMS_Nextseq.codonCounts", wildtype_replication, start_end_replication)
-replication_P1_B_filtered <- codonFilter(oligos_programmed_replication, "codonCounts/Replication_P1_RepB_DMS_Nextseq.codonCounts", wildtype_replication, start_end_replication)
-replication_P1_C_filtered <- codonFilter(oligos_programmed_replication, "codonCounts/Replication_P1_RepC_DMS_Nextseq.codonCounts", wildtype_replication, start_end_replication)
-replication_P2_A_filtered <- codonFilter(oligos_programmed_replication, "codonCounts/Replication_P2_RepA_DMS_Nextseq.codonCounts", wildtype_replication, start_end_replication)
-replication_P2_B_filtered <- codonFilter(oligos_programmed_replication, "codonCounts/Replication_P2_RepB_DMS_Nextseq.codonCounts", wildtype_replication, start_end_replication)
-replication_P2_C_filtered <- codonFilter(oligos_programmed_replication, "codonCounts/Replication_P2_RepC_DMS_Nextseq.codonCounts", wildtype_replication, start_end_replication)
+replication_P0_filtered <- codonFilter(oligos_programmed_replication, "input_files/codon_counts/Replication_input_DMS_DMS.codonCounts", wildtype_replication, start_end_replication)
+replication_P1_A_filtered <- codonFilter(oligos_programmed_replication, "input_files/codon_counts/Replication_P1_RepA_DMS_Nextseq.codonCounts", wildtype_replication, start_end_replication)
+replication_P1_B_filtered <- codonFilter(oligos_programmed_replication, "input_files/codon_counts/Replication_P1_RepB_DMS_Nextseq.codonCounts", wildtype_replication, start_end_replication)
+replication_P1_C_filtered <- codonFilter(oligos_programmed_replication, "input_files/codon_counts/Replication_P1_RepC_DMS_Nextseq.codonCounts", wildtype_replication, start_end_replication)
+replication_P2_A_filtered <- codonFilter(oligos_programmed_replication, "input_files/codon_counts/Replication_P2_RepA_DMS_Nextseq.codonCounts", wildtype_replication, start_end_replication)
+replication_P2_B_filtered <- codonFilter(oligos_programmed_replication, "input_files/codon_counts/Replication_P2_RepB_DMS_Nextseq.codonCounts", wildtype_replication, start_end_replication)
+replication_P2_C_filtered <- codonFilter(oligos_programmed_replication, "input_files/codon_counts/Replication_P2_RepC_DMS_Nextseq.codonCounts", wildtype_replication, start_end_replication)
 
 #Removing wildtype codons (because Enrich2 analysis will be performed without a wild type reference)
 remove_wt <- function(codon_counts){
@@ -164,7 +164,7 @@ replication_P2_C_filtered_wt_removed <- remove_wt(codon_counts=replication_P2_C_
 
 #Converts filtered capsid counts to hvgs format for Enrich2
 capsid_saver <- function(filtered_counts, write_path){
-  capsid_aa <- "MGSQVSTQRSGSHENSNSATEGSTINYTTINYYKDSYAATAGKQSLKQDPDKFANPVKDIFTEMAAPLKSPSAEACGYSDRVAQLTIGNSTITTQEAANIIVGYGEWPSYCSDSDATAVDKPTRPDVSVNRFYTLDTKLWEKSSKGWYWKFPDVLTETGVFGQNAQFHYLYRSGFCIHVQCNASKFHQGALLVAVLPEYVIGTVAGGTGTEDSHPPYKQTQPGADGFELQHPYVLDAGIPISQLTVCPHQWINLRTNNCATIIVPYINALPFDSALNHCNFGLLVVPISPLDYDQGATPVIPITITLAPMCSEFAGLRQAVTQGFPTELKPGTNQFLTTDDGVSAPILPNFHPTPCIHIPGEVRNLLELCQVETILEVNNVPTNATSLMERLRFPVSAQAGKGELCAVFRADPGRSGPWQSTLLGQLCGYYTQWSGSLEVTFMFTGSFMATGKMLIAYTPPGGPLPKDRATAMLGTHVIWDFGLQSSVTLVIPWISNTHYRAHARDGVFDYYTTGLVSIWYQTNYVVPIGAPNTAYIIALAAAQKNFTMKLCKDASDILQTGTIQGDRVADVIESSIGDSVSRALTRALPAPTGQDTQVSSHRLDTGKVPALQAAEIGASSNASDESMIETRCVLNSHSTAETTLDSFFSRAGLVGEIDLPLEGTTNPNGYANWDIDITGYAQMRRKVELFTYMRFDAEFTFVACTPTGQVVPQLLQYMFVPPGAPKPDSRESLAWQTATNPSVFVKLSDPPAQVSVPFMSPASAYQWFYDGYPTFGEHKQEKDLEYGACPNNMMGTFSVRTVGTSKSKYPLVIRIYMRMKHVRAWIPRPMRNQNYLFKANPNYAGNFIKPTGASRTAITTL" %>% str_split("")
+  capsid_aa <- read_csv("input_files/capsid_aa.fasta", skip=1, col_names=FALSE)$X1 %>% str_split("")
   capsid_aa_one <- capsid_aa[[1]]
   filtered_long <- mutate(filtered_counts, pos=row_number()) %>% select(pos, everything()) %>%
     pivot_longer(cols=(A:V))
@@ -173,7 +173,7 @@ capsid_saver <- function(filtered_counts, write_path){
 }
 
 replication_saver <- function(filtered_counts, write_path){
-  replication_aa <- "GKFGQQSGAIYVGNFRVVNRHLATHNDWANLVWEDSSRDLLVSSTTAQGCDTIARCNCQTGVYYCNSMRKHYPVSFSKPSLIFVEASEYYPARYQSHLMLAVGHSEPGDCGGILRCQHGVVGIVSTGGNGLVGFADVRDLLWLDDEAMEQGVSDYIKGLGDAFGMGFTDAVSREVEALKSHLIGSEGAVEKILKNLVKLISALVIVIRSDYDMVTLTATLALIGCHGSPWAWVKSKTASILGIPMAQKQSASWLKKFNDAASAAKGLEWISNKISKFIDWLKEKIIPAAKEKVEFLNNLKQLPLLENQISNLEQSAASQEDLEAMFGNVSYLAHFCRKFQPLYATEAKRVYALEKRMNNYMQFKSKHRIEPVCLIIRGSPGTGKSLATGIIARAIADKYHSSVYSLPPDPDHFDGYKQQIVTVMDDLCQNPDGKDMSLFCQMVSTVDFIPPMASLEEKGVSFTSKFVIASTNASNIIVPTVSDSDAIRRRFFMDCDIEVTDSYKTELGRLDAGRAARLCSENNTANFKRCSPLVCGKAIQLRDRKSKVRYSVDTVVSELIREYNNRSVIGNTIEALFQGPPKFRPIRISLEEKPAPDAISDLLASVDSEEVRQYCRDQGWIVPDSPTNVERHLNRAVLIMQSVATVVAVVSLVYVIYKLFAGFQGAYSGAPKQTLKKPVLRTATVQGPSLDFALSLLRRNIRQVQTDQGHFTMLGVRDRLAVLPRHSQPGKTIWVEHKLVKIVDAVELVDEQGVNLELTLVTLDTNEKFRDITRFIPETISPASDATLVINTEHMPSMFVPVGDVVQYGFLNLSGKPTHRTMMYNFPTKAGQCGGVVTAVGKVIGIHIGGNGRQGFCAALKRGYFCSEQGEIQWMKPNKETGRLNINGPTRTKLEPSVFHDVFEGTKEPAVLTSKDPRLEVDFEQALFSKYVGNTLHEPDEFVKEAALHYANQLKQLDIKTTKMSMEDACYGTENLEAIDLHTSAGYPYSALGIKKKDILDPTTRDVSKMKFYMDKYGLDLPYSTYVKDELRAIDKIKKGKSRLIEASSLNDSVYLRMTFGHLYEAFHANPGTITGSAVGCNPDVFWSKLPILLPGSLFAFDYSGYDASLSPVWFRALEIVLREIGYSEDAVSLIEGINHTHHVYRNKTYCVLGGMPSGCSGTSIFNSMINNIIIRTLLIKTFKGIDLDELNMVAYGDDVLASYPFPIDCLELARTGKEYGLTMTPADKSPCFNEVTWENATFLKRGFLPDHQFPFLIHPTMPMREIHESIRWTKDARSTQDHVRSLCLLAWHNGKEEYEKFVSAIRSVPIGKALAIPNYENLRRNWLELF" %>% str_split("")
+  replication_aa <- read_csv("input_files/capsid_aa.fasta", skip=1, col_names=FALSE)$X1 %>% str_split("")
   replication_aa_one <- replication_aa[[1]]
   filtered_long <- mutate(filtered_counts, pos=row_number()) %>% select(pos, everything()) %>%
     pivot_longer(cols=(A:V))
@@ -181,18 +181,18 @@ replication_saver <- function(filtered_counts, write_path){
   write_tsv(filtered_hgvs, write_path)
 }
 
-capsid_saver(capsid_P0_filtered_wt_removed, "filtered/capsid_P0_hgvs.tsv")
-capsid_saver(capsid_P1_A_filtered_wt_removed, "filtered/capsid_P1_A_hgvs.tsv")
-capsid_saver(capsid_P1_B_filtered_wt_removed, "filtered/capsid_P1_B_hgvs.tsv")
-capsid_saver(capsid_P1_C_filtered_wt_removed, "filtered/capsid_P1_C_hgvs.tsv")
-capsid_saver(capsid_P2_A_filtered_wt_removed, "filtered/capsid_P2_A_hgvs.tsv")
-capsid_saver(capsid_P2_B_filtered_wt_removed, "filtered/capsid_P2_B_hgvs.tsv")
-capsid_saver(capsid_P2_C_filtered_wt_removed, "filtered/capsid_P2_C_hgvs.tsv")
+capsid_saver(capsid_P0_filtered_wt_removed, "output_files/capsid_P0_hgvs.tsv")
+capsid_saver(capsid_P1_A_filtered_wt_removed, "output_files/capsid_P1_A_hgvs.tsv")
+capsid_saver(capsid_P1_B_filtered_wt_removed, "output_files/capsid_P1_B_hgvs.tsv")
+capsid_saver(capsid_P1_C_filtered_wt_removed, "output_files/capsid_P1_C_hgvs.tsv")
+capsid_saver(capsid_P2_A_filtered_wt_removed, "output_files/capsid_P2_A_hgvs.tsv")
+capsid_saver(capsid_P2_B_filtered_wt_removed, "output_files/capsid_P2_B_hgvs.tsv")
+capsid_saver(capsid_P2_C_filtered_wt_removed, "output_files/capsid_P2_C_hgvs.tsv")
 
-replication_saver(replication_P0_filtered_wt_removed, "filtered/replication_P0_hgvs.tsv")
-replication_saver(replication_P1_A_filtered_wt_removed, "filtered/replication_P1_A_hgvs.tsv")
-replication_saver(replication_P1_B_filtered_wt_removed, "filtered/replication_P1_B_hgvs.tsv")
-replication_saver(replication_P1_C_filtered_wt_removed, "filtered/replication_P1_C_hgvs.tsv")
-replication_saver(replication_P2_A_filtered_wt_removed, "filtered/replication_P2_A_hgvs.tsv")
-replication_saver(replication_P2_B_filtered_wt_removed, "filtered/replication_P2_B_hgvs.tsv")
-replication_saver(replication_P2_C_filtered_wt_removed, "filtered/replication_P2_C_hgvs.tsv")
+replication_saver(replication_P0_filtered_wt_removed, "output_files/replication_P0_hgvs.tsv")
+replication_saver(replication_P1_A_filtered_wt_removed, "output_files/replication_P1_A_hgvs.tsv")
+replication_saver(replication_P1_B_filtered_wt_removed, "output_files/replication_P1_B_hgvs.tsv")
+replication_saver(replication_P1_C_filtered_wt_removed, "output_files/replication_P1_C_hgvs.tsv")
+replication_saver(replication_P2_A_filtered_wt_removed, "output_files/replication_P2_A_hgvs.tsv")
+replication_saver(replication_P2_B_filtered_wt_removed, "output_files/replication_P2_B_hgvs.tsv")
+replication_saver(replication_P2_C_filtered_wt_removed, "output_files/replication_P2_C_hgvs.tsv")

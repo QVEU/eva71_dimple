@@ -3,20 +3,13 @@ library(zoo)
 library(Biostrings)
 library(DescTools)
 
-entropy_aa <- function(i){return(-(i*logb(i, base = 2)))}
-compute_shannon_entropy <- function(consensus_matrix){
-  frequency_matrix <- consensus_matrix/sum(consensus_matrix[[1]])
-  entropy_by_aa <- entropy_aa(frequency_matrix)
-  entropy_by_site_int <- colSums(entropy_by_aa, na.rm=TRUE)
-  entropy_by_site <- data.frame(entropy_by_site_int) %>% mutate(entropy_by_site_int, aa_pos=row_number(), entropy=entropy_by_site_int) %>% select(aa_pos, entropy)
-  return(entropy_by_site)
-}
+source("compute_shannon_entropy.R")
 
-EV71 <- readAAStringSet("Enterovirus_A71_Curated_AA_Aligned.fasta")
+EV71 <- readAAStringSet("input_files/Enterovirus_A71_Curated_AA_Aligned.fasta")
 
-mfe <- read.csv("merged_df_indel_DMS.csv") %>% mutate(exp_mfe=2^score)
+mfe <- read.csv("input_files/merged_df_indel_DMS.csv") %>% mutate(exp_mfe=2^score)
 
-EV_Features <- read_csv("EV71_4643_Features.csv")
+EV_Features <- read_csv("input_files/EV71_4643_Features.csv")
 
 #Identifying which sequence contains the insertion and where it is located, and trimming these residues from the alignment
 consensus_matrix_test <- consensusMatrix(EV71) %>% as.data.frame() 
@@ -60,4 +53,4 @@ EV71_entropy_plot <- ggplot(entropy_EV71_with_roll) +
 EV71_entropy_plot
 
 
-ggsave("EV71_entropy.pdf", plot=EV71_entropy_plot, width=9, height=1.5)
+ggsave("output_files/EV71_entropy.pdf", plot=EV71_entropy_plot, width=9, height=1.5)

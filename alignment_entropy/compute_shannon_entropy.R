@@ -1,6 +1,7 @@
-entropy_aa <- function(i){return(-(i*logb(i, base = 2)))}
-
 compute_shannon_entropy <- function(consensus_matrix){
+  
+  entropy_aa <- function(i){return(-(i*logb(i, base = 2)))}
+  
   frequency_matrix <- consensus_matrix/sum(consensus_matrix[[1]])
   entropy_by_aa <- entropy_aa(frequency_matrix)
   entropy_by_site_int <- colSums(entropy_by_aa, na.rm=TRUE)
