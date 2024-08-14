@@ -13,7 +13,7 @@ This repository contains two scripts used to process data and generate figures i
 - R packages: tidyverse, zoo, Biostrings, DescTools
 
 ### Instructions 
-- alignment_entropy
+#### alignment_entropy:
 
 Running instructions: Set the working directory to this folder before running the script.
 
