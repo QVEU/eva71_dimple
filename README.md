@@ -6,7 +6,8 @@ This repository contains three scripts used to process data and generate figures
 
 - dms_processing: raw codon counts from mutational scanning experiments and scripts for filtering codon counts based on codons introduced via synthetic biology. 
 - alignment_entropy: sequence files and scripts for generating Shannon entropy from curated EV-A71 sequence set and comparing this to mean mutational fitness effect as measured via mutational scanning.
-- figure_generation_script: script generates all the figures displayed in the paper. 
+- figure_generation_script: script generates all the figures displayed in the paper.
+- *Note:* Other python scripts used for read mapping of the sequenced libraries can be found in [InDel_Toolkit](https://github.com/QVEU/InDel_Toolkit) 
 ### Prerequisites
 
 - R 4.4.3+
@@ -15,7 +16,12 @@ This repository contains three scripts used to process data and generate figures
 ### Instructions 
 #### alignment_entropy:
 
-Running instructions: Set the working directory to this folder before running the script.
+Running instructions: Run Rscript in r or rstudio from the 
+
+e.g.:
+```r
+setwd alignment_entropy/
+```
 
 input_files descriptions:
 - EV71_4643_Features.csv: EV71_4643_Features.csv: Contains list of features of EV-A71 genome used to plot boundaries of viral proteins.
