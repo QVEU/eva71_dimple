@@ -16,7 +16,7 @@ This repository contains three scripts used to process data and generate figures
 ### Instructions 
 #### alignment_entropy:
 
-Running instructions: Run Rscript in r or rstudio from the 
+Running instructions: Run R script in r or rstudio from the `alignment_entropy` directory.
 
 e.g.:
 ```r
@@ -35,7 +35,7 @@ output_files: pdf image of entropy/DMS MFE trace for EV-A71.
 
 #### dms_processing:
 
-Running instructions: Set the working directory to this folder before running the script.
+Running instructions: Run R script in r or rstudio from the `dms_processing` directory.
 
 input_files descriptions:
 - All_Oligos_Capsid.fasta: Oligopools containing every possible amino acid change in the capsid proteins.
@@ -50,7 +50,8 @@ DMS_Processing_Workflow.R: R script that will filter for only designed codon var
 output_files: Contains all filtered amino acid counts for all amino acid scanning experiments. hgvs references the nomenclature used to name the variants, and count represents the sequencing count for each variant. 
 
 #### figure_generation_script:
-Running instructions: Set the working directory to this folder before running the script.
+
+Running instructions: Run Rscript in r or rstudio from the `figure_generation_script` directory.
 
 Contains R scripts required to generate figures for deep mutational scanning experiments. 
 
