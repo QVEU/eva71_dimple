@@ -1,0 +1,15 @@
+[{
+ "name": "2024-07-05_16:29_EVA71_2B",
+ "modelSeeds": [
+  "562565046"
+ ],
+ "sequences": [
+  {
+   "proteinChain": {
+    "sequence": "GVSDYIKGLGDAFGMGFTDAVSREVEALKSHLIGSEGAVEKILKNLVKLISALVIVIRSDYDMVTLTATLALIGCHGSPWAWVKSKTASILGIPMAQKQ",
+    "count": 1
+   }
+  }
+ ]
+}
+]
