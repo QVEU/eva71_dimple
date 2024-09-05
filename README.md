@@ -35,7 +35,17 @@ output_files: pdf image of entropy/DMS MFE trace for EV-A71.
 
 #### dms_processing:
 
-Running instructions: Run R script in r or rstudio from the `dms_processing` directory.
+##### Running instructions: Run R script in r or rstudio from the `dms_processing` directory.
+##### Note: we recommend running interactively or in a [conda](http://anaconda.org) environment with tidyverse and r installed. 
+
+```{bash}
+conda create -n newenv
+conda activate newenv
+conda install -c conda-forge r --solver=classic
+conda install -c conda-forge r-tidyverse --solver=classic
+Rscript DMS_Processing_Workflow.R
+```
+
 
 input_files descriptions:
 - All_Oligos_Capsid.fasta: Oligopools containing every possible amino acid change in the capsid proteins.
