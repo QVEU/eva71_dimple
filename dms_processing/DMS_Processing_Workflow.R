@@ -18,7 +18,7 @@ codonFilter <- function(oligos_programmed_, codon_counts_, wildtype_, start_end_
       str_c(collapse="") %>% 
       str_split(">") %>% .[[1]] %>% tibble(sequenceid=.) %>% 
       #The first row is empty, which causes problems for separate_wider
-      slice(2:nrow(.)) %>% 
+      dplyr::slice(2:nrow(.)) %>% 
       #Separating (id) and (seq)
       separate_wider_regex(
         sequenceid, c(id="^.+_DMS\\-\\d+_[A-z][a-z]{1,2}\\d+[A-z][a-z]{1,2}", seq=".+$"))
@@ -81,7 +81,7 @@ codonFilter <- function(oligos_programmed_, codon_counts_, wildtype_, start_end_
   #By now, a dataframe with TRUE/FALSE for each codon 
   codons_twist_wt <- filler(codons_programmed_wt, proteome_size)
   columns <- c(colnames(codons_twist_wt))
-  codons_DMS <- codon_counts %>% select(columns) %>% slice(start_:end_)
+  codons_DMS <- codon_counts %>% select(columns) %>% dplyr::slice(start_:end_)
   
   filter_codon <- function(codons_twist_wt, codons_DMS){
     
